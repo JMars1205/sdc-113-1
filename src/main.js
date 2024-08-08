@@ -30,10 +30,10 @@ const FormAutoFill = new Vue({
     loading: false
   },
   methods: {
-    // ID 限填 9 碼
+    // ID 限填 8 碼
     limitIdLen(val) {
-      if(val.length > 9) {
-        return this.id =  this.id.slice(0, 9);
+      if(val.length > 8) {
+        return this.id =  this.id.slice(0, 8);
       }
     },
     // 送出表單
@@ -53,8 +53,8 @@ const FormAutoFill = new Vue({
   },
   watch: {
     id: function(val) {
-      // ID 輸入到 9 碼就查詢資料
-      if(val.length === 9) {
+      // ID 輸入到 8 碼就查詢資料
+      if(val.length === 8) {
 
         // this.persons 裡沒這筆資料，才 POST
         if(this.persons[this.id] === undefined) {
