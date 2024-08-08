@@ -51,7 +51,7 @@
           <p>筆記文：<a href="https://letswrite.tw/google-forms-id-data/" target="_blank">Let's Write</a></p>
         </div>
         <div class="form-group">
-          <label for="main_id">請輸入 產品序號（11311-001 至 11313-008）</label>
+          <label for="main_id">請輸入 產品序號（11311001 至 11313008）</label>
           <input class="form-control" id="main_id" type="text" v-model="id" @input="limitIdLen(id)"/>
         </div>
         <div class="two-col">
@@ -66,7 +66,7 @@
           <div class="col">
             <div class="form-group">
               <label for="phone">廠商名稱</label>
-              <input class="form-control" id="phone" type="tel" v-model="person.phone" disabled="disabled"/>
+              <input class="form-control" id="phone" type="text" v-model="person.phone" disabled="disabled"/>
             </div>
           </div>
         </div>
