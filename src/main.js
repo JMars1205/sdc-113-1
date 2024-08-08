@@ -30,10 +30,10 @@ const FormAutoFill = new Vue({
     loading: false
   },
   methods: {
-    // ID 限填 10 碼
+    // ID 限填 9 碼
     limitIdLen(val) {
-      if(val.length > 10) {
-        return this.id =  this.id.slice(0, 10);
+      if(val.length > 9) {
+        return this.id =  this.id.slice(0, 9);
       }
     },
     // 送出表單
